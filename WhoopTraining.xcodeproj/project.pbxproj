@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53D949D2A44ACCA008B243E /* ImpactUnlockedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D949C2A44ACCA008B243E /* ImpactUnlockedCardView.swift */; };
+		B578512D2A43906800B21A03 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B578512C2A43906800B21A03 /* Localizable.strings */; };
+		B57851312A439C3F00B21A03 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57851302A439C3F00B21A03 /* ViewModifiers.swift */; };
+		B57851332A439D3C00B21A03 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57851322A439D3C00B21A03 /* Colors.swift */; };
+		B57851352A439F2C00B21A03 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57851342A439F2C00B21A03 /* Styles.swift */; };
 		B5B834782A43885000866E6A /* WhoopTrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B834772A43884F00866E6A /* WhoopTrainingApp.swift */; };
 		B5B8347A2A43885000866E6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B834792A43885000866E6A /* ContentView.swift */; };
 		B5B8347C2A43885200866E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B8347B2A43885200866E6A /* Assets.xcassets */; };
 		B5B8347F2A43885200866E6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B8347E2A43885200866E6A /* Preview Assets.xcassets */; };
+		B5B834872A43892F00866E6A /* GenericCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B834862A43892F00866E6A /* GenericCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53D949C2A44ACCA008B243E /* ImpactUnlockedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactUnlockedCardView.swift; sourceTree = "<group>"; };
+		B578512C2A43906800B21A03 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B57851302A439C3F00B21A03 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		B57851322A439D3C00B21A03 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		B57851342A439F2C00B21A03 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		B5B834742A43884F00866E6A /* WhoopTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoopTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B834772A43884F00866E6A /* WhoopTrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoopTrainingApp.swift; sourceTree = "<group>"; };
 		B5B834792A43885000866E6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5B8347B2A43885200866E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B8347E2A43885200866E6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5B834862A43892F00866E6A /* GenericCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B578512F2A43908900B21A03 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5B8347B2A43885200866E6A /* Assets.xcassets */,
+				B57851322A439D3C00B21A03 /* Colors.swift */,
+				B578512C2A43906800B21A03 /* Localizable.strings */,
+				B57851342A439F2C00B21A03 /* Styles.swift */,
+				B57851302A439C3F00B21A03 /* ViewModifiers.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B5B8346B2A43884F00866E6A = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +75,10 @@
 		B5B834762A43884F00866E6A /* WhoopTraining */ = {
 			isa = PBXGroup;
 			children = (
+				B578512F2A43908900B21A03 /* Resources */,
+				B5B834852A4388F800866E6A /* Views */,
 				B5B834772A43884F00866E6A /* WhoopTrainingApp.swift */,
 				B5B834792A43885000866E6A /* ContentView.swift */,
-				B5B8347B2A43885200866E6A /* Assets.xcassets */,
 				B5B8347D2A43885200866E6A /* Preview Content */,
 			);
 			path = WhoopTraining;
@@ -65,6 +90,15 @@
 				B5B8347E2A43885200866E6A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5B834852A4388F800866E6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5B834862A43892F00866E6A /* GenericCard.swift */,
+				B53D949C2A44ACCA008B243E /* ImpactUnlockedCardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B8347F2A43885200866E6A /* Preview Assets.xcassets in Resources */,
+				B578512D2A43906800B21A03 /* Localizable.strings in Resources */,
 				B5B8347C2A43885200866E6A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +173,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B8347A2A43885000866E6A /* ContentView.swift in Sources */,
+				B57851332A439D3C00B21A03 /* Colors.swift in Sources */,
 				B5B834782A43885000866E6A /* WhoopTrainingApp.swift in Sources */,
+				B57851352A439F2C00B21A03 /* Styles.swift in Sources */,
+				B5B834872A43892F00866E6A /* GenericCard.swift in Sources */,
+				B57851312A439C3F00B21A03 /* ViewModifiers.swift in Sources */,
+				B53D949D2A44ACCA008B243E /* ImpactUnlockedCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

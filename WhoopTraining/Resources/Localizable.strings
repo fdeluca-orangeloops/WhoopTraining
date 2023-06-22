@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  WhoopTraining
+
+  Created by Federico De Luca on 21/6/23.
+  
+*/
+
+"impact_unlocked_card_title" = "New impact unlocked";
+"impact_unlocked_card_description" = "You've unlocked a new impact. \nSee how %@ impacts your Recovery.";
+"impact_unlocked_card_button" = "Button text";
