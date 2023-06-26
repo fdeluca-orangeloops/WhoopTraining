@@ -21,13 +21,15 @@ struct GenericCard: View {
                         .bold()
                         .padding(.top, 4)
                         .padding(.leading)
-                    Text(viewModel.descriptionText)
-                        .textCase(viewModel.descriptionTextCase)
-                        .foregroundColor(viewModel.descriptionTextColor)
-                        .bold()
-                        .padding(.top, 4)
-                        .padding(.leading)
-                        .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+                    if let descriptionText = viewModel.descriptionText {
+                        Text(descriptionText)
+                            .textCase(viewModel.descriptionTextCase)
+                            .foregroundColor(viewModel.descriptionTextColor)
+                            .bold()
+                            .padding(.top, 4)
+                            .padding(.leading)
+                            .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+                    }
                     Button(action: viewModel.buttonAction) {
                         HStack {
                             Text(viewModel.buttonText)
@@ -41,22 +43,29 @@ struct GenericCard: View {
                     .padding(.leading)
                     .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
                 }
-                viewModel.representativeImage!
-                    .resizable()
-                    .frame(width: 100, height: 100)
-                    .foregroundColor(viewModel.representativeImageColor)
+                Spacer()
+                if let representativeImage = viewModel.representativeImage {
+                    representativeImage
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .foregroundColor(viewModel.representativeImageColor)
+                }
             }
             ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: 24, height: 48)
-                    .foregroundColor(viewModel.counterBackgroundColor)
-                VStack {
-                    viewModel.counterIcon!
-                        .resizable()
-                        .frame(width: 12, height: 12)
-                    Text(String(viewModel.counterValue))
+                if let counterValue = viewModel.counterValue {
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame(width: 24, height: 48)
+                        .foregroundColor(viewModel.counterBackgroundColor)
+                    VStack {
+                        if let counterIcon = viewModel.counterIcon {
+                        counterIcon
+                            .resizable()
+                            .frame(width: 12, height: 12)
+                        }
+                        Text(String(counterValue))
+                    }
+                    .foregroundColor(viewModel.counterTextColor)
                 }
-                .foregroundColor(viewModel.counterTextColor)
             }
         }
         .padding()
@@ -70,5 +79,10 @@ struct ImpactUnlockedView_Previews: PreviewProvider {
     static var previews: some View {
         GenericCard(viewModel: ImpactUnlockedCardViewModel())
             .previewLayout(.sizeThatFits)
+        GenericCard(viewModel: CleanCardViewModel())
+            .previewLayout(.sizeThatFits)
+        GenericCard(viewModel: ImpactUnlockedCardViewModel())
+            .previewLayout(.sizeThatFits)
+        
     }
 }
