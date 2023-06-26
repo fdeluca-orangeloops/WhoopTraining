@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         HStack {
-            ImpactUnlockedCardView(behaviorName: "A behavior")
+            GenericCard(viewModel: ImpactUnlockedCardViewModel())
         }
     }
 }

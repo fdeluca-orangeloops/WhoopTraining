@@ -8,62 +8,67 @@
 import SwiftUI
 
 struct GenericCard: View {
-    var title: String
-    var description: String
-    var counterValue: Int
-    var buttonText: String
-    var buttonAction: () -> Void
-    var image: Image
+    var viewModel: CardViewModel
+    @State private var cornerRadius: CGFloat = 20
     
     var body: some View {
         HStack(alignment: .top) {
             HStack(alignment: .center) {
                 VStack (alignment: .leading) {
-                    Text(title).cardH1()
-                    Text(description).cardBody()
-                    Button(action: buttonAction) {
+                    Text(viewModel.titleText)
+                        .textCase(viewModel.titleTextCase)
+                        .foregroundColor(viewModel.titleTextColor)
+                        .bold()
+                        .padding(.top, 4)
+                        .padding(.leading)
+                    Text(viewModel.descriptionText)
+                        .textCase(viewModel.descriptionTextCase)
+                        .foregroundColor(viewModel.descriptionTextColor)
+                        .bold()
+                        .padding(.top, 4)
+                        .padding(.leading)
+                        .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+                    Button(action: viewModel.buttonAction) {
                         HStack {
-                            Text(buttonText)
-                            image
+                            Text(viewModel.buttonText)
                         }
-                    }.card()
+                        viewModel.buttonIcon
+                    }
+                    .foregroundColor(.customSkyblue)
+                    .textCase(.uppercase)
+                    .bold()
+                    .padding(.top, 4)
+                    .padding(.leading)
+                    .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
                 }
-                Image(systemName: "target")
+                viewModel.representativeImage!
                     .resizable()
                     .frame(width: 100, height: 100)
-                    .foregroundColor(.customLightGray)
+                    .foregroundColor(viewModel.representativeImageColor)
             }
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
                     .frame(width: 24, height: 48)
-                    .foregroundColor(.customGray)
+                    .foregroundColor(viewModel.counterBackgroundColor)
                 VStack {
-                    Image(systemName: "checkmark")
+                    viewModel.counterIcon!
                         .resizable()
                         .frame(width: 12, height: 12)
-                        .foregroundColor(.white)
-                    Text(String(counterValue))
-                        .foregroundColor(.white)
+                    Text(String(viewModel.counterValue))
                 }
+                .foregroundColor(viewModel.counterTextColor)
             }
         }
         .padding()
-        .background(Color.customDarkGray)
-        .clipShape(RoundedRectangle(cornerRadius: 20))
-        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.customSkyblue, lineWidth: 3))
+        .background(viewModel.cardBackgroundColor)
+        .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+        .overlay(RoundedRectangle(cornerRadius: cornerRadius).stroke(viewModel.cardBorderColor, lineWidth: 3))
     }
 }
 
 struct ImpactUnlockedView_Previews: PreviewProvider {
     static var previews: some View {
-        GenericCard(
-            title: "Title",
-            description: "Description",
-            counterValue: 2,
-            buttonText: "Button text",
-            buttonAction: {
-                print("Button pressed")
-            }, image: Image(systemName: "arrow.right"))
+        GenericCard(viewModel: ImpactUnlockedCardViewModel())
             .previewLayout(.sizeThatFits)
     }
 }

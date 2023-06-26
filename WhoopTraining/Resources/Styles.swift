@@ -7,11 +7,20 @@
 
 import SwiftUI
 
-extension Button {
-    func card() -> some View { self.modifier(ButtonCard()) }
-}
-
-extension Text {
-    func cardBody() -> some View { self.modifier(TextCardBody()) }
-    func cardH1() -> some View { self.modifier(TextCardH1()) }
+extension Font {
+    static var body: Font {
+        get {
+            return .solvast(size: 12)
+        }
+    }
+    static var button: Font {
+        get {
+            return .solvast(size: 12)
+        }
+    }
+    static var h1: Font {
+        get {
+            return .solvast(size: 20)
+        }
+    }
 }

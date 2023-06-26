@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B53D949D2A44ACCA008B243E /* ImpactUnlockedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D949C2A44ACCA008B243E /* ImpactUnlockedCardView.swift */; };
+		B549E3B32A493C1F003945FA /* ImpactUnlockedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B549E3B22A493C1F003945FA /* ImpactUnlockedCardViewModel.swift */; };
+		B549E3BA2A493F5C003945FA /* SOLVAST.otf in Resources */ = {isa = PBXBuildFile; fileRef = B549E3B52A493D2D003945FA /* SOLVAST.otf */; };
+		B549E3BD2A494020003945FA /* Fonts+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B549E3BC2A494020003945FA /* Fonts+Custom.swift */; };
 		B578512D2A43906800B21A03 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B578512C2A43906800B21A03 /* Localizable.strings */; };
-		B57851312A439C3F00B21A03 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57851302A439C3F00B21A03 /* ViewModifiers.swift */; };
 		B57851332A439D3C00B21A03 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57851322A439D3C00B21A03 /* Colors.swift */; };
 		B57851352A439F2C00B21A03 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57851342A439F2C00B21A03 /* Styles.swift */; };
 		B5B834782A43885000866E6A /* WhoopTrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B834772A43884F00866E6A /* WhoopTrainingApp.swift */; };
@@ -17,12 +18,15 @@
 		B5B8347C2A43885200866E6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B8347B2A43885200866E6A /* Assets.xcassets */; };
 		B5B8347F2A43885200866E6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B8347E2A43885200866E6A /* Preview Assets.xcassets */; };
 		B5B834872A43892F00866E6A /* GenericCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B834862A43892F00866E6A /* GenericCard.swift */; };
+		B5E319FE2A460F1600C14222 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E319FD2A460F1600C14222 /* CardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B53D949C2A44ACCA008B243E /* ImpactUnlockedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactUnlockedCardView.swift; sourceTree = "<group>"; };
+		B549E3B22A493C1F003945FA /* ImpactUnlockedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactUnlockedCardViewModel.swift; sourceTree = "<group>"; };
+		B549E3B52A493D2D003945FA /* SOLVAST.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SOLVAST.otf; sourceTree = "<group>"; };
+		B549E3B92A493F3D003945FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B549E3BC2A494020003945FA /* Fonts+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Custom.swift"; sourceTree = "<group>"; };
 		B578512C2A43906800B21A03 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		B57851302A439C3F00B21A03 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		B57851322A439D3C00B21A03 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B57851342A439F2C00B21A03 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		B5B834742A43884F00866E6A /* WhoopTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoopTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +35,7 @@
 		B5B8347B2A43885200866E6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B8347E2A43885200866E6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5B834862A43892F00866E6A /* GenericCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCard.swift; sourceTree = "<group>"; };
+		B5E319FD2A460F1600C14222 /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,14 +49,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B549E3B42A493D1C003945FA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B549E3B52A493D2D003945FA /* SOLVAST.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B549E3BB2A493FFC003945FA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B549E3BC2A494020003945FA /* Fonts+Custom.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B578512F2A43908900B21A03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B549E3B42A493D1C003945FA /* Fonts */,
 				B5B8347B2A43885200866E6A /* Assets.xcassets */,
 				B57851322A439D3C00B21A03 /* Colors.swift */,
 				B578512C2A43906800B21A03 /* Localizable.strings */,
 				B57851342A439F2C00B21A03 /* Styles.swift */,
-				B57851302A439C3F00B21A03 /* ViewModifiers.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -59,8 +80,8 @@
 		B5B8346B2A43884F00866E6A = {
 			isa = PBXGroup;
 			children = (
-				B5B834762A43884F00866E6A /* WhoopTraining */,
 				B5B834752A43884F00866E6A /* Products */,
+				B5B834762A43884F00866E6A /* WhoopTraining */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,11 +96,14 @@
 		B5B834762A43884F00866E6A /* WhoopTraining */ = {
 			isa = PBXGroup;
 			children = (
+				B5B834792A43885000866E6A /* ContentView.swift */,
+				B549E3B92A493F3D003945FA /* Info.plist */,
+				B5B8347D2A43885200866E6A /* Preview Content */,
 				B578512F2A43908900B21A03 /* Resources */,
+				B549E3BB2A493FFC003945FA /* Utils */,
+				B5E319F82A460E7800C14222 /* ViewModels */,
 				B5B834852A4388F800866E6A /* Views */,
 				B5B834772A43884F00866E6A /* WhoopTrainingApp.swift */,
-				B5B834792A43885000866E6A /* ContentView.swift */,
-				B5B8347D2A43885200866E6A /* Preview Content */,
 			);
 			path = WhoopTraining;
 			sourceTree = "<group>";
@@ -96,9 +120,17 @@
 			isa = PBXGroup;
 			children = (
 				B5B834862A43892F00866E6A /* GenericCard.swift */,
-				B53D949C2A44ACCA008B243E /* ImpactUnlockedCardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B5E319F82A460E7800C14222 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B5E319FD2A460F1600C14222 /* CardViewModel.swift */,
+				B549E3B22A493C1F003945FA /* ImpactUnlockedCardViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +193,7 @@
 			files = (
 				B5B8347F2A43885200866E6A /* Preview Assets.xcassets in Resources */,
 				B578512D2A43906800B21A03 /* Localizable.strings in Resources */,
+				B549E3BA2A493F5C003945FA /* SOLVAST.otf in Resources */,
 				B5B8347C2A43885200866E6A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,12 +206,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B8347A2A43885000866E6A /* ContentView.swift in Sources */,
+				B549E3BD2A494020003945FA /* Fonts+Custom.swift in Sources */,
 				B57851332A439D3C00B21A03 /* Colors.swift in Sources */,
+				B549E3B32A493C1F003945FA /* ImpactUnlockedCardViewModel.swift in Sources */,
 				B5B834782A43885000866E6A /* WhoopTrainingApp.swift in Sources */,
 				B57851352A439F2C00B21A03 /* Styles.swift in Sources */,
 				B5B834872A43892F00866E6A /* GenericCard.swift in Sources */,
-				B57851312A439C3F00B21A03 /* ViewModifiers.swift in Sources */,
-				B53D949D2A44ACCA008B243E /* ImpactUnlockedCardView.swift in Sources */,
+				B5E319FE2A460F1600C14222 /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +343,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WhoopTraining/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhoopTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +372,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WhoopTraining/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhoopTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
