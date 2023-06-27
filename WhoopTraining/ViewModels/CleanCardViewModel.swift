@@ -13,18 +13,18 @@ class CleanCardViewModel: CardViewModel {
 
     var titleText: String = "Clean card"
     var titleTextColor: Color = .yellow
-    var titleTextFont: Font = .h1
+    var titleTextFont: Font = .cardH1
     var titleTextCase: Text.Case? = .uppercase
 
     var descriptionText: String? = "This card is so clean."
     var descriptionTextColor: Color? = .white
-    var descriptionTextFont: Font? = .body
+    var descriptionTextFont: Font? = .cardBody
     var descriptionTextCase: Text.Case? = nil
 
     var buttonIcon: Image? = nil
     var buttonText: String = "CTA"
     var buttonTextColor: Color = .brown
-    var buttonTextFont: Font = .body
+    var buttonTextFont: Font = .cardBody
     var buttonTextCase: Text.Case? = .uppercase
     var buttonAction: () -> Void = { print("CTA pressed") }
 

@@ -8,19 +8,24 @@
 import SwiftUI
 
 extension Font {
-    static var body: Font {
+    static var cardBody: Font {
         get {
-            return .solvast(size: 12)
+            return .militech(size: 18)
         }
     }
-    static var button: Font {
+    static var cardButton: Font {
         get {
-            return .solvast(size: 12)
+            return .militech(size: 18)
         }
     }
-    static var h1: Font {
+    static var cardH1: Font {
         get {
-            return .solvast(size: 20)
+            return .militech(size: 22)
+        }
+    }
+    static var cardCounter: Font {
+        get {
+            return .militech(size: 18)
         }
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Font {
-    static func solvast(size: CGFloat) -> Font {
-        return Font.custom("SOLVAST", size: size)
+    static func militech(size: CGFloat) -> Font {
+        return Font.custom("Militech", size: size)
     }
 }

@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B549E3B32A493C1F003945FA /* ImpactUnlockedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B549E3B22A493C1F003945FA /* ImpactUnlockedCardViewModel.swift */; };
-		B549E3BA2A493F5C003945FA /* SOLVAST.otf in Resources */ = {isa = PBXBuildFile; fileRef = B549E3B52A493D2D003945FA /* SOLVAST.otf */; };
 		B549E3BD2A494020003945FA /* Fonts+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B549E3BC2A494020003945FA /* Fonts+Custom.swift */; };
 		B549E3BF2A494E98003945FA /* CleanCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B549E3BE2A494E98003945FA /* CleanCardViewModel.swift */; };
+		B56A827F2A4B2054001FE508 /* Militech.otf in Resources */ = {isa = PBXBuildFile; fileRef = B56A827E2A4B2054001FE508 /* Militech.otf */; };
 		B57851332A439D3C00B21A03 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57851322A439D3C00B21A03 /* Colors.swift */; };
 		B57851352A439F2C00B21A03 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57851342A439F2C00B21A03 /* Styles.swift */; };
 		B5B834782A43885000866E6A /* WhoopTrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B834772A43884F00866E6A /* WhoopTrainingApp.swift */; };
@@ -23,10 +23,10 @@
 
 /* Begin PBXFileReference section */
 		B549E3B22A493C1F003945FA /* ImpactUnlockedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactUnlockedCardViewModel.swift; sourceTree = "<group>"; };
-		B549E3B52A493D2D003945FA /* SOLVAST.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SOLVAST.otf; sourceTree = "<group>"; };
 		B549E3B92A493F3D003945FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B549E3BC2A494020003945FA /* Fonts+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Custom.swift"; sourceTree = "<group>"; };
 		B549E3BE2A494E98003945FA /* CleanCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanCardViewModel.swift; sourceTree = "<group>"; };
+		B56A827E2A4B2054001FE508 /* Militech.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Militech.otf; sourceTree = "<group>"; };
 		B57851322A439D3C00B21A03 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		B57851342A439F2C00B21A03 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		B5B834742A43884F00866E6A /* WhoopTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhoopTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +52,7 @@
 		B549E3B42A493D1C003945FA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				B549E3B52A493D2D003945FA /* SOLVAST.otf */,
+				B56A827E2A4B2054001FE508 /* Militech.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -192,8 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5B8347F2A43885200866E6A /* Preview Assets.xcassets in Resources */,
-				B549E3BA2A493F5C003945FA /* SOLVAST.otf in Resources */,
 				B5B8347C2A43885200866E6A /* Assets.xcassets in Resources */,
+				B56A827F2A4B2054001FE508 /* Militech.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

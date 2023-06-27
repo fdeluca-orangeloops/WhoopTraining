@@ -14,18 +14,18 @@ class ImpactUnlockedCardViewModel: CardViewModel {
 
     var titleText: String = String(localized: "New impact unlocked")
     var titleTextColor: Color = .white
-    var titleTextFont: Font = .h1
+    var titleTextFont: Font = .cardH1
     var titleTextCase: Text.Case? = nil
 
     var descriptionText: String? = "You've unlocked a new impact. \nSee how This behaviour impacts your Recovery."
     var descriptionTextColor: Color? = .customLightGray
-    var descriptionTextFont: Font? = .body
+    var descriptionTextFont: Font? = .cardBody
     var descriptionTextCase: Text.Case? = nil
 
     var buttonIcon: Image? = Image(systemName: "arrow.right")
     var buttonText: String = String(localized: "Button text")
     var buttonTextColor: Color = .customSkyblue
-    var buttonTextFont: Font = .button
+    var buttonTextFont: Font = .cardButton
     var buttonTextCase: Text.Case? = .uppercase
     var buttonAction: () -> Void = { print("Button pressed") }
 
@@ -35,6 +35,6 @@ class ImpactUnlockedCardViewModel: CardViewModel {
     var counterBackgroundColor: Color? = .customGray
     var counterIcon: Image? = Image(systemName: "checkmark")
     var counterTextColor: Color? = .white
-    var counterTextFont: Font? = .body
+    var counterTextFont: Font? = .cardCounter
     var counterValue: Int? = 2
 }

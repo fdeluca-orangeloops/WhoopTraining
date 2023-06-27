@@ -17,6 +17,7 @@ struct GenericCard: View {
                 VStack (alignment: .leading) {
                     Text(viewModel.titleText)
                         .textCase(viewModel.titleTextCase)
+                        .font(viewModel.titleTextFont)
                         .foregroundColor(viewModel.titleTextColor)
                         .bold()
                         .padding(.top, 4)
@@ -24,6 +25,7 @@ struct GenericCard: View {
                     if let descriptionText = viewModel.descriptionText {
                         Text(descriptionText)
                             .textCase(viewModel.descriptionTextCase)
+                            .font(viewModel.descriptionTextFont)
                             .foregroundColor(viewModel.descriptionTextColor)
                             .bold()
                             .padding(.top, 4)
@@ -33,6 +35,7 @@ struct GenericCard: View {
                     Button(action: viewModel.buttonAction) {
                         HStack {
                             Text(viewModel.buttonText)
+                                .font(viewModel.buttonTextFont)
                         }
                         viewModel.buttonIcon
                     }
@@ -63,6 +66,7 @@ struct GenericCard: View {
                             .frame(width: 12, height: 12)
                         }
                         Text(String(counterValue))
+                            .font(viewModel.counterTextFont)
                     }
                     .foregroundColor(viewModel.counterTextColor)
                 }
@@ -72,6 +76,8 @@ struct GenericCard: View {
         .background(viewModel.cardBackgroundColor)
         .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
         .overlay(RoundedRectangle(cornerRadius: cornerRadius).stroke(viewModel.cardBorderColor, lineWidth: 3))
+        .padding(.leading)
+        .padding(.trailing)
     }
 }
 
@@ -81,8 +87,5 @@ struct ImpactUnlockedView_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
         GenericCard(viewModel: CleanCardViewModel())
             .previewLayout(.sizeThatFits)
-        GenericCard(viewModel: ImpactUnlockedCardViewModel())
-            .previewLayout(.sizeThatFits)
-        
     }
 }
